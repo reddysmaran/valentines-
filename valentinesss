@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine?</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: url('https://www.transparenttextures.com/patterns/tiny-heart.png'), linear-gradient(135deg, #ffc1cc, #ffe4e1);
+            text-align: center;
+            color: #5c2c2c;
+            padding: 20px;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            max-width: 600px;
+        }
+        h1 {
+            font-weight: 600;
+        }
+        button {
+            background: #ff8fab;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        button:hover {
+            background: #ff6b9c;
+        }
+        .cat-img {
+            width: 200px;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>I don't know how to code perfectly, but I tried 😭</h1>
+        <img class="cat-img" src="https://i.imgur.com/9gXv5Fc.jpg" alt="Crying cat meme">
+        <p>Questionnaire regarding Valentine's, but some things you should know first...</p>
+        <button onclick="showPros()">Proceed</button>
+    </div>
+    
+    <script>
+        function showPros() {
+            document.body.innerHTML = `
+            <div class="container">
+                <h1>Pros of Dating Me 💖</h1>
+                <img class="cat-img" src="https://i.imgur.com/dWPQJ9F.jpg" alt="Cute me">
+                <ul>
+                    <li>I'm funny (sometimes)</li>
+                    <li>I'll send you cat memes daily</li>
+                    <li>I'll probably share my food with you</li>
+                </ul>
+                <button onclick="showLetter()">Still not convinced?</button>
+            </div>`;
+        }
+        function showLetter() {
+            document.body.innerHTML = `
+            <div class="container">
+                <h1>💌 A Letter For You</h1>
+                <p>(Click the heart to open)</p>
+                <button onclick="window.open('https://open.spotify.com/playlist/YOUR_PLAYLIST_LINK', '_blank')">💖</button>
+                <br><br>
+                <button onclick="showReviews()">Smh</button>
+            </div>`;
+        }
+        function showReviews() {
+            document.body.innerHTML = `
+            <div class="container">
+                <h1>Reviews on Saanvi</h1>
+                <p>⭐⭐⭐⭐⭐ "The best person ever!"</p>
+                <p>⭐⭐⭐⭐⭐ "10/10 would recommend"</p>
+                <button onclick="seriousMoment()">Not impressed</button>
+            </div>`;
+        }
+        function seriousMoment() {
+            document.body.innerHTML = `
+            <div class="container">
+                <h1>Fine, I'm afraid this is where it's come to...</h1>
+                <button onclick="cryingPage()">Next</button>
+            </div>`;
+        }
+        function cryingPage() {
+            document.body.innerHTML = `
+            <div class="container">
+                <h1>😭😭😭</h1>
+                <p>Pls date me</p>
+                <button onclick="finalDecision()">I'm ready to make my decision</button>
+            </div>`;
+        }
+        function finalDecision() {
+            document.body.innerHTML = `
+            <div class="container">
+                <h1>Will you be my Valentine?</h1>
+                <button onclick="yasReaction()">YASSS (you won't regret this)</button>
+                <button onclick="ouchReaction()">Nah, I'm blinded to greatness (ouch okay :(( )</button>
+            </div>`;
+        }
+        function yasReaction() {
+            document.body.innerHTML = `
+            <div class="container">
+                <h1>Come over bbg 😏</h1>
+                <img class="cat-img" src="https://i.imgur.com/Fs2ncVc.jpg" alt="Happy cat">
+            </div>`;
+        }
+        function ouchReaction() {
+            document.body.innerHTML = `
+            <div class="container">
+                <h1>💔 Oof, okay then...</h1>
+                <img class="cat-img" src="https://i.imgur.com/aFwE0mY.jpg" alt="Sad cat">
+            </div>`;
+        }
+    </script>
+</body>
+</html>
